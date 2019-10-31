@@ -1,2 +1,9 @@
-00-pInBox-CondCont.nb  -> PIB, aplicación de condiciones de contorno y normalización
-01-vdW.nb. -> vdW state eq. Simulation.
+00-vdW.nb. -> vdW state eq. Simulation.
+01-pInBox-CondCont.nb  -> PIB, aplicación de condiciones de contorno y normalización
+02-pinBox-1D.nb -> pinBox gráficos 1D
+03-pinBox-2D.nb-> pinBox gráficos 2D
+04-pin-3D.nb -> pinBox gráficos 3D
+05a-hOrb-s.nb -> atomo de H, orbital s
+05b-hOrb-p.nb -> atomo de H, orbital p
+-> atomo de H, orbital s
+-> atomo de H, orbital s
