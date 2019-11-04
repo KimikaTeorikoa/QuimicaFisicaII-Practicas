@@ -3,7 +3,8 @@
 02-pinBox-1D.nb -> pinBox  1D grafikoak
 03-pinBox-2D.nb-> pinBox 2D grafikoak
 04-pin-3D.nb -> pinBox 3D grafikoak
+05a0_PE.nb -> e- aren Energia Potentziala H atomoan.
 05a-hOrb-s.nb -> H atomoa , s orbitala 
 05b-hOrb-p.nb ->  Hatomoa , p orbitala
--> H atomoa, d orbitala 
--> H atomoa, d orbitala
+05c-hOrb-dxy.nb -> H atomoa, dxy orbitala 
+05d-hOrb-dz.nb -> H atomoa, dz2 orbitala
