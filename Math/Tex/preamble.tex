@@ -1,0 +1,174 @@
+%Cambios de color
+\include{tikzSetup}
+\input{colores}
+
+% \usepackage[utf8]{inputenc}  %parece que no hace falta con xelatex
+% \usepackage{default}
+
+%La plantilla
+% \usetheme{Goettingen}
+
+%Para que los itemize sean circulos
+\useinnertheme{circles}
+
+
+\usepackage[no-math]{fontspec}
+\setsansfont{EHUSans}
+%Para algún texto particular
+\newfontfamily\myEHUSerif{EHUSerif}     %Uso, entre paréntesis si es necesario   \my_EHUSerif
+ 
+
+
+% \usepackage[many]{tcolorbox}
+% \makeatletter
+% \setbeamertemplate{frametitle}{%
+%   \nointerlineskip%
+%   \usebeamerfont{headline}%
+%   \nointerlineskip%
+%   \hbox{\hspace{-0.09\paperwidth}%
+%   \begin{tcolorbox}[
+%     enhanced,
+%     boxrule=0pt,   %Elimino un caja de 15pt que ponía a la izquierda
+%     colframe=naranja,
+%     arc=0pt,
+%     outer arc=0pt,
+%     colback=green,
+%     colupper=naranja,
+%     width=\paperwidth+2mm,
+%     toprule=0pt,
+%     bottomrule=0pt,
+%     rightrule=0pt,
+%     left=15pt,
+%   ]%
+% %    {\usebeamercolor{frametitle}\usebeamerfont*{frametitle}\strut\insertframetitle\strut} Quito dos strut que meten un espacio y hacen el frametitle más ancho
+%     {\usebeamercolor{frametitle}\usebeamerfont*{frametitle}\insertframetitle}
+%     \ifx\insertframesubtitle\@empty%
+%       \strut\par%
+%     \else%
+%      \par{\usebeamerfont*{framesubtitle}{\usebeamercolor[fg]{framesubtitle}\insertframesubtitle}\par}%
+%     \fi
+%   \end{tcolorbox}%
+%   }
+%   \hrule width \paperwidth heigh 100pt
+% 
+%   \nointerlineskip
+% }
+% \makeatother
+
+
+\setbeamertemplate{frametitle}{%
+    \usebeamerfont{frametitle}\vspace{.2\baselineskip}\insertframetitle%
+    \vphantom{g}% To avoid fluctuations per frame
+    %\hrule% Uncomment to see desired effect, without a full-width hrule
+    \par% <-- added
+    
+    \ifx\insertframesubtitle\@empty%
+      \strut\par%
+    \else%
+     \par{\usebeamerfont*{framesubtitle}{\usebeamercolor[fg]{framesubtitle}\vspace{.3\baselineskip}\insertframesubtitle}\par}%
+    \fi     
+    \hspace*{-\dimexpr0.5\paperwidth-0.5\textwidth}% <-- calculation of left margin width
+    %a paperwidth=128mm=364.16pt   1mm=2.845pt 
+%Para 4/3    
+%     \mbox{\rule[.4\baselineskip]{224.59pt}{1pt}\hspace{1pt}%  % para que sea una continuación de linea, sino introduce `` ''
+% \rule[.4\baselineskip]{85.17pt}{1pt}\hspace{1pt}%
+% \rule[.4\baselineskip]{31.91pt}{1pt}\hspace{1pt}%
+% \rule[.4\baselineskip]{11.57pt}{1pt}\hspace{1pt}%
+% \rule[.4\baselineskip]{3.80pt}{1pt}\hspace{1pt}%
+% \rule[.4\baselineskip]{1pt}{1pt}
+%Para 16/9    
+    \mbox{\rule[.4\baselineskip]{279.82pt}{1pt}\hspace{1pt}%  % para que sea una continuación de linea, sino introduce `` ''
+\rule[.4\baselineskip]{105.46pt}{1pt}\hspace{1pt}%
+\rule[.4\baselineskip]{40.05pt}{1pt}\hspace{1pt}%
+\rule[.4\baselineskip]{14.68pt}{1pt}\hspace{1pt}%
+\rule[.4\baselineskip]{5.99pt}{1pt}\hspace{1pt}%
+\rule[.4\baselineskip]{2.29pt}{1pt}\hspace{1pt}%
+\rule[.4\baselineskip]{1pt}{1pt}
+}
+\vspace{-.5em}  % subo un poco porqu si no el texto principal empiza muy abajo
+}
+
+
+
+%Para las imagenes
+\usepackage{graphicx}
+\graphicspath{{Images/}}
+%Para fijar imagenes
+\usepackage[absolute,overlay]{textpos}   % añadir ,showboxes para ver la caja de texto, no tiene borde por abajo, es donde empieza el texto y de ahí para abajo
+\setlength{\TPHorizModule}{128mm}   % 1 unidad de ancho es textpos es el ancho de la diapositiva
+\setlength{\TPVertModule}{96mm}     % 1 unidad de alto es textpos es el ancho de la diapositiva
+
+
+%Kentzen ditugu beheko nabigatzeko botoiak
+\setbeamertemplate{navigation symbols}{}
+
+%Page number esto pone 10/96
+% \setbeamertemplate{footline}[frame number]
+% Esto quita el numero total de frames
+\setbeamertemplate{footline}{% 
+  \hfill% 
+  \usebeamercolor[fg]{page number in head/foot}% 
+  \usebeamerfont{page number in head/foot}% 
+  \insertframenumber%
+  %\,/\,\inserttotalframenumber
+  \kern1em\vskip2pt% 
+}
+
+
+%Multirow
+\usepackage{multirow}
+
+
+%Para las citas de la esquina
+% \usepackage[absolute]{textpos}
+% \setlength{\TPHorizModule}{10mm}
+% \setlength{\TPVertModule}{\TPHorizModule}
+\usepackage{tikz}
+\usepackage[]{media9}
+
+
+%%% Time in presentation
+
+\usepackage[font=Times,timeinterval=1, timeduration=2.0, timedeath=0, fillcolorwarningsecond=white!60!yellow,
+timewarningfirst=50,timewarningsecond=80,resetatpages=all]{tdclock}
+
+\usepackage{cancel}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{animate}
+\usepackage{setspace}
+\usepackage{changepage}
+\usepackage{caption}
+\usepackage{textpos}
+\usepackage{fancybox}
+\usepackage{pstricks}
+\usepackage{media9}
+\usepackage{tabu}
+\hypersetup{pdfpagemode=UseNone}
+
+\usepackage{colortbl}
+\usepackage{overpic}
+\usepackage{geometry}
+\usepackage{pdfpcnotes}
+
+\usepackage[basque]{babel}
+
+\newcommand{\specialcell}[2][l]{%
+ \begin{tabular}[#1]{@{}l@{}}#2\end{tabular}}
+
+\usepackage{caption}
+\usepackage{eurosym}
+
+\usepackage{listings}
+
+\makeatletter%
+\special{pdf: put @thispage <</Group << /S /Transparency /I true /CS /DeviceRGB>> >>}%
+\makeatother%
+
+\makeatletter
+\let\@@magyar@captionfix\relax
+\makeatother
+
+\usepackage{ragged2e}
+
+
