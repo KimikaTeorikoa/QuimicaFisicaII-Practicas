@@ -1,0 +1,157 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5135,        149]
+NotebookOptionsPosition[      4376,        131]
+NotebookOutlinePosition[      4715,        146]
+CellTagsIndexPosition[      4672,        143]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"V", "[", "r_", "]"}], ":=", 
+    RowBox[{"-", 
+     FractionBox[
+      RowBox[{"e", "^", "2"}], 
+      RowBox[{
+       RowBox[{"4", "*", "\[Pi]", "*", "\[Epsilon]0", "*", "r"}], 
+       "\[IndentingNewLine]"}]]}]}], ";"}], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"r", " ", "Angstrom"}], "-", "etan"}], " ", 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"e", "=", 
+    RowBox[{"1.602177", "*", 
+     RowBox[{"10", "^", 
+      RowBox[{"-", "19"}]}]}]}], " ", ";"}], 
+  RowBox[{"(*", "Coulomb", "*)"}], " "}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"\[Epsilon]0", "=", 
+    RowBox[{"8.854187", "*", 
+     RowBox[{"10", "^", 
+      RowBox[{"-", "12"}]}]}]}], ";"}], " ", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"C", "^", "2"}], " ", "/", 
+    RowBox[{"(", 
+     RowBox[{"N", " ", 
+      RowBox[{"m", "^", "2"}]}], ")"}]}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"AToM", "=", 
+    RowBox[{"10", "^", 
+     RowBox[{"-", "10"}]}]}], ";"}], " ", 
+  RowBox[{"(*", 
+   RowBox[{"A", " ", "\[Rule]", " ", 
+    RowBox[{"m", "-", 
+     RowBox[{"tara", " ", "pasatzeko"}]}]}], " ", "*)"}], 
+  " "}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"JtoeV", "=", 
+    RowBox[{"6.242", "*", 
+     RowBox[{"10", "^", "18"}]}]}], ";"}], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"J", "-", "etail"}], " ", "\[Rule]", " ", 
+    RowBox[{"eV", "-", 
+     RowBox[{"etara", " ", "pasazteko"}]}]}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AtoBohr", "=", "1.88973"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.781841839524644*^9, 3.781842012737718*^9}, {
+  3.781842149919078*^9, 3.781842158466119*^9}, {3.781842329867741*^9, 
+  3.781842567049716*^9}, {3.782207946777008*^9, 3.7822079785992823`*^9}, {
+  3.782208092016292*^9, 3.782208100847348*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"1d7fbbfa-60ab-42c0-aec1-1875807a3038"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"Kalkulatu", " ", "energia", " ", "r"}], "=", 
+    RowBox[{"10", " ", "Angstrometakoa", " ", "denean"}]}], " ", "*)"}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.782208012401579*^9, 
+  3.782208057438756*^9}},ExpressionUUID->"d7687bde-2823-4f08-8d84-\
+394c687edc98"],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.782208059584072*^9, 
+  3.7822080602788363`*^9}},ExpressionUUID->"c05b3149-2b60-48bd-aad1-\
+30201c0a2c39"],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{"(*", " ", "\[IndentingNewLine]", 
+   RowBox[{"Eta", " ", "unitatea", " ", 
+    RowBox[{"atomikoetan", "?", " ", "\[IndentingNewLine]", "A"}], " ", 
+    "angstrom", " ", "1", " ", "1.8897", " ", "bohr", " ", "dira"}], 
+   "\[IndentingNewLine]", "*)"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.782208062557461*^9, 3.782208063086771*^9}, {
+  3.782208118663109*^9, 
+  3.782208163215446*^9}},ExpressionUUID->"577e42e2-206f-40b8-8874-\
+528fea62de73"],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.782208172767911*^9, 
+  3.782208173247004*^9}},ExpressionUUID->"5bfdbffa-2239-4cf8-b793-\
+80dd0862bfb3"],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{
+    "Irudikatu", " ", "ezazu", " ", "Ptentzian", " ", "energia", " ", "r"}], 
+    "-", 
+    RowBox[{"ren", " ", "funtzioan"}]}], " ", "*)"}]}]], "Input",
+ CellChangeTimes->{{3.782208174429515*^9, 
+  3.782208199543795*^9}},ExpressionUUID->"1586d53e-0cca-4867-8826-\
+79a661aef1a7"]
+},
+WindowSize->{1078, 904},
+WindowMargins->{{-1593, Automatic}, {199, Automatic}},
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1973, 60, 198, "Input",ExpressionUUID->"1d7fbbfa-60ab-42c0-aec1-1875807a3038"],
+Cell[2534, 82, 376, 9, 78, "Input",ExpressionUUID->"d7687bde-2823-4f08-8d84-394c687edc98"],
+Cell[2913, 93, 280, 5, 147, "Input",ExpressionUUID->"c05b3149-2b60-48bd-aad1-30201c0a2c39"],
+Cell[3196, 100, 568, 11, 193, "Input",ExpressionUUID->"577e42e2-206f-40b8-8874-528fea62de73"],
+Cell[3767, 113, 206, 4, 78, "Input",ExpressionUUID->"5bfdbffa-2239-4cf8-b793-80dd0862bfb3"],
+Cell[3976, 119, 396, 10, 78, "Input",ExpressionUUID->"1586d53e-0cca-4867-8826-79a661aef1a7"]
+}
+]
+*)
+
